@@ -1,16 +1,21 @@
+import { EmployeeComponent } from './../components/employee/employee.component';
+import { PageNotFoundComponent } from './../components/page-not-found/page-not-found.component';
+import { AdminComponent } from './../components/admin/admin.component';
+import { ClockinComponent } from './../components/clockin/clockin.component';
 import { RouterModule, Routes } from '@angular/router';
 
-// const appRoutes: Routes = [
-//     { path: 'crisis-center', component: CrisisListComponent },
-//     { path: 'hero/:id',      component: HeroDetailComponent },
-//     {
-//       path: 'heroes',
-//       component: HeroListComponent,
-//       data: { title: 'Heroes List' }
-//     },
-//     { path: '',
-//       redirectTo: '/heroes',
-//       pathMatch: 'full'
-//     },
-//     { path: '**', component: PageNotFoundComponent }
-//   ];
+
+ export const appRoutes: Routes = [
+    { path: 'clockin', component: ClockinComponent },
+    { path: 'admin',      component: AdminComponent },
+    {
+      path: 'employee',
+      component: EmployeeComponent,
+      data: { title: 'Heroes List' }
+    },
+    { path: '',
+      redirectTo: '/clockin',
+      pathMatch: 'full'
+    },
+    { path: '**', component: PageNotFoundComponent }
+  ];
