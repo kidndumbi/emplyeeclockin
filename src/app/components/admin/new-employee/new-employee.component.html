@@ -1,0 +1,33 @@
+
+<div class="container">
+  <h1>New Employee</h1>
+  <div>
+    <form action="">
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">First</label>
+        <div class="col-10">
+          <input class="form-control" name="first" [(ngModel)]="employee.first" type="text"  id="example-text-input">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-search-input" class="col-2 col-form-label">Last</label>
+        <div class="col-10">
+          <input class="form-control" name="last" [(ngModel)]="employee.last" type="text"  id="example-search-input">
+        </div>
+      </div>
+      <div class="form-group row">
+          <label for="example-search-input"  class="col-2 col-form-label">Age</label>
+          <div class="col-10">
+            <input class="form-control" name="age"  type="number" [(ngModel)]="employee.age"  id="example-search-input">
+          </div>
+        </div>
+      <div class="form-group row">
+          <label for="example-email-input" class="col-2 col-form-label">Email</label>
+          <div class="col-10">
+            <input class="form-control" type="email" name="email" [(ngModel)]="employee.email"  id="example-email-input">
+          </div>
+      </div>
+      <button type="button" (click)="addemployee()" class="btn btn-primary btn-lg btn-block">Add</button>
+    </form>
+
+  </div>

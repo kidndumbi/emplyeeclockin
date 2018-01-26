@@ -1,3 +1,5 @@
-<p>
-  admin works!
-</p>
+<div class="topMenu">
+  <button type="button" [routerLink]="['newemployee']" class="btn btn-outline-secondary">Add New Employee</button>
+  <button type="button" [routerLink]="['viewemployees']" class="btn btn-outline-success">View Employees</button>
+</div>
+<router-outlet></router-outlet>

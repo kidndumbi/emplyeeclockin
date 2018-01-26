@@ -1,3 +1,8 @@
+import { EmployeesService } from './../../services/employees.service';
+import { Employee } from './../../models/employee.model';
+
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(){
+    
+  }
 
   ngOnInit() {
+
   }
 
 }
